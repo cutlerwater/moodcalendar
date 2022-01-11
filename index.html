@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- SOCIAL PANEL HTML -->
+    <div class="container">
+		<h2>2022 Mood Calendar</h2>
+		<h4>~ color each day depending on what your mood was / is or if it is worth flagging ~</h4>
+		<p>Select mood:</p>
+		<div class="moods_container">
+			<button class="mood mood_1" id="mood_1">
+				<i class='fa fa-flag-o'></i>
+			</button>
+			<button class="mood mood_2" id="mood_2">
+				<i class='fa fa-smile-o'></i>
+			</button>
+			<button class="mood mood_3" id="mood_3">
+				<i class='fa fa-meh-o'></i>
+			</button>
+			<button class="mood mood_4" id="mood_4">
+				<i class="fa fa-frown-o"></i>
+			</button>
+			<button class="mood mood_5" id="mood_5">
+				<i class='fa fa-hand-o-down'></i>
+			</button>
+		</div>
+		<p>then click on the circles below</p>
+		<button id="randomize" class="action_btn randomize">
+			<i class='fa fa-random'></i>
+		</button>
+		<button id="clear" class="action_btn clear">
+			<i class='fa fa-recycle'></i>
+		</button>
+		<div id="calendar" class="calendar"></div>
+	</div>
+	
+	<div class="social-panel-container">
+		<div class="social-panel">
+			<p>Created with <i class="fa fa-heart"></i> by
+				<a target="_blank" href="https://cutlerwater-newportfolio.netlify.app/">Cutlerwater</a></p>
+			<button class="close-btn"><i class="fa fa-times"></i></button>
+			<h4>Get in touch on</h4>
+			<ul>
+				<li>
+					<a href="https://cutlerwater-newportfolio.netlify.app/" target="_blank">
+						<i class='fa fa-skyatlas'></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/garrett-cutler-20b52311/" target="_blank">
+						<i class='fa fa-linkedin-square'></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/cutlerwater" target="_blank">
+						<i class='fa fa-facebook-square'></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/garrett-cutler-20b52311/" target="_blank">
+						<i class='fa fa-github-square'></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://studio.youtube.com/channel/UCaQLwbwbdZbadVkodFAhBiA/videos" target="_blank">
+						<i class='fa fa-youtube-square'></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<button class="floating-btn">
+		Get in Touch
+	</button>
+	
+	<!-- <div class="floating-text">
+		Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+	</div> -->
+		<script src="app.js"></script>
+</body>
+</html>
